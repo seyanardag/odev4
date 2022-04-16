@@ -8,7 +8,7 @@ export function canditates(users) {
 export function getUsers() {
   return async (dispatch) => {
     axios
-      .get("https://jsonplaceholder.typicode.com/users")
+      .get("https://restapi-assignment4.herokuapp.com/")
       .then((res) => res.data)
       .then((res) => dispatch(canditates(res)))
       .catch((err) => console.log("HATA:", err));
