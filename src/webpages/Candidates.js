@@ -25,7 +25,7 @@ export default function Candidates() {
     console.log(usersToList);
   };
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users/")
+    fetch("https://restapi-assignment4.herokuapp.com/")
     .then((res) => res.json())
     .then((data) => {
       setUsers(data);
